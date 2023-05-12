@@ -1,6 +1,10 @@
 body {
     background: linear-gradient(to bottom, #1e5799, #7db9e8);border: 10px solid #3618be;
     box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      
+      
   }
 
 .container {
@@ -46,7 +50,7 @@ video {
 
 
   body {
-    background: #f9f9f9 url('bg-pattern.png') repeat;
+    background: #947e7e url('bg-pattern.png') repeat;
     font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
@@ -55,7 +59,7 @@ video {
 
  /*CSS for footer*/
  footer {
-    background-color: #333;
+    background-color: #3f62ba;
     color: #fff;
     padding: 40px 20px;
   }
@@ -97,7 +101,7 @@ video {
   }
   /*Navbar CSS*/
   nav {
-    background-color: #333;
+    background-color: #4057c7;
     color: #fff;
     padding: 10px;
   }

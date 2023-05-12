@@ -189,4 +189,19 @@ video {
   }
   
 
+
+  .welcome-message {
+    animation: move-right-to-left 5s linear infinite;
+  }
+  
+  @keyframes move-right-to-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
   

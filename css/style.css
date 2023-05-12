@@ -1,3 +1,4 @@
+
 body {
     background: linear-gradient(to bottom, #1e5799, #7db9e8);border: 10px solid #8d427a;
     box-sizing: border-box;
@@ -15,9 +16,11 @@ body {
 
 h1 {
 	font-size: 36px;
-	margin-top: 40px;
 	margin-bottom: 20px;
 	text-align: center;
+        margin-top: 100px;
+      
+      
 }
 
 video {
@@ -167,15 +170,35 @@ video {
   
 /*Welcome message css*/
 .welcome-message {
-    padding: 10px;
-    background-color: #fff;
-    font-size: 16px;
-    z-index: 9999;
-
-    text-align: right;
+    background-color: powderblue;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+    margin-top: 25px;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #82969c, #f2f2f288);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
   }
   
   
@@ -191,7 +214,7 @@ video {
 
 
   .welcome-message {
-    animation: move-right-to-left 5s linear infinite;
+    animation: move-right-to-left 15s linear infinite;
   }
   
   @keyframes move-right-to-left {
@@ -202,6 +225,94 @@ video {
       transform: translateX(-100%);
     }
   }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
   
 
+ /*Christmas decoration for welcome message*/
+
+ 
+.welcome-message:before,
+.welcome-message:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f00;
+    box-shadow: 0 0 20px #f00;
+    opacity: 0;
+    animation: twinkle 1s ease-out infinite;
+}
+
+.welcome-message:before {
+    top: -5px;
+    left: -5px;
+    animation-delay: 0s;
+}
+
+.welcome-message:after {
+    bottom: -5px;
+    right: -5px;
+    animation-delay: 0.5s;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.welcome-message:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f00;
+    box-shadow: 0 0 20px #f00;
+    animation: blink 1s infinite;
+  }
+
+
+.welcome-message:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0f0;
+    box-shadow: 0 0 20px #0f0;
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      transform: translateY(-50%) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-50%) scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-50%) scale(1);
+      opacity: 0.8;
+    }
+  }
   

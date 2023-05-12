@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #1e5799, #7db9e8);border: 10px solid #3618be;
+    background: linear-gradient(to bottom, #1e5799, #7db9e8);border: 10px solid #8d427a;
     box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -59,7 +59,7 @@ video {
 
  /*CSS for footer*/
  footer {
-    background-color: #3f62ba;
+    background-color: #3d769c;
     color: #fff;
     padding: 40px 20px;
   }
@@ -101,9 +101,16 @@ video {
   }
   /*Navbar CSS*/
   nav {
-    background-color: #4057c7;
-    color: #fff;
+    background-color: #4d879e;
+    color: #f6f7fb;
     padding: 10px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
   }
   
   nav ul {
@@ -126,3 +133,35 @@ video {
   nav a:hover {
     color: #00acee;
   }
+
+
+  @media (max-width: 768px) {
+    /* Update the styles of your elements here */
+    .container {
+      padding: 20px;
+    }
+    
+    /* Hide the navigation menu by default */
+    nav {
+      display: none;
+    }
+    
+    /* Add a hamburger menu icon */
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      z-index: 2;
+    }
+    
+    /* Show the navigation menu when the hamburger icon is clicked */
+    nav.show {
+      display: block;
+    }
+  }
+  

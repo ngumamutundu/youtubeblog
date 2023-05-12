@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #1e5799, #7db9e8);border: 10px solid #333;
+    background: linear-gradient(to bottom, #1e5799, #7db9e8);border: 10px solid #3618be;
     box-sizing: border-box;
   }
 
@@ -53,4 +53,72 @@ video {
     padding: 0;
   }
 
+ /*CSS for footer*/
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+  }
   
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #00acee;
+  }
+  
+  .footer-info {
+    text-align: right;
+  }
+  
+  .footer-info p {
+    margin: 0;
+  }
+  
+  .footer-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    color: #00acee;
+  }
+  /*Navbar CSS*/
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #00acee;
+  }

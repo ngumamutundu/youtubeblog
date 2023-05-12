@@ -165,3 +165,28 @@ video {
     }
   }
   
+/*Welcome message css*/
+.welcome-message {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 9999;
+
+    text-align: right;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+  
+  
+  @keyframes slide-in {
+    0% {
+      right: -200px; /* start position */
+    }
+    100% {
+      right: 0; /* end position */
+    }
+  }
+  
+
+  

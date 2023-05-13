@@ -20,6 +20,7 @@ h1 {
 	margin-bottom: 20px;
 	text-align: center;
         margin-top: 100px;
+        color: #973691;
       
       
 }
@@ -383,3 +384,15 @@ em {
       }
     }
     
+    a {
+      color: #f00;
+    }
+
+    .z {
+      color: #510846;
+    }
+
+
+    .bi-youtube {
+      font-size: 6em;
+    }

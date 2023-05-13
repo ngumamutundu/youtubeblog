@@ -326,6 +326,13 @@ em {
   color: rgb(121, 24, 148);
   text-decoration: wavy;
     display: block;
+
+
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 20px); /* adjust the 20px value to your preference */
     }
 
     .logo {
